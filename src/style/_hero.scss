@@ -1,0 +1,23 @@
+#hero {
+	height: 600px;
+	color: honeydew;
+
+	.hero-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 1.2rem;
+		text-align: center;
+		height: 600px;
+		.header {
+			font-weight: lighter;
+			font-size: 4em;
+			margin-bottom: 3rem;
+		}
+
+		@media screen and (max-width: 768px) {
+			height: 400px;
+		}
+	}
+}
