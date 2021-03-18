@@ -14,11 +14,11 @@ const settings = {
 const Hero = () => {
 	return (
 		<section id="hero">
-			<Slider {...settings}>
+			{/* <Slider {...settings}> */}
+				{/* <HeroItem /> */}
+				{/* <HeroItem /> */}
 				<HeroItem />
-				<HeroItem />
-				<HeroItem />
-			</Slider>
+			{/* </Slider> */}
 		</section>
 	);
 };

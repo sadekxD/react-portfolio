@@ -1,7 +1,7 @@
 import React from "react";
-import code from "../../images/code.PNG";
 import { BsCode } from "react-icons/bs";
 import { AiOutlineEye } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const ProjectItem = () => {
 	return (
@@ -14,13 +14,6 @@ const ProjectItem = () => {
 					/>
 					<div className="img-overlay"></div>
 				</div>
-				{/* <div className="project-desc">
-					<p>
-						We are three enterpeneurs from diverse background who have come
-						together to bring about a change in the way you think about business
-						and about the resourses that you rely on.
-					</p>
-				</div> */}
 				<h3 className="project-title">This is dummy project</h3>
 				<div className="project-control">
 					<a href="#" className="btn-project">

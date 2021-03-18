@@ -34,33 +34,57 @@ const About = () => {
 				<div className="social">
 					<h3 className="social-text">Join me on my platforms</h3>
 					<ul className="social-group">
-						<li className="social-item">
+						<motion.li
+							whileHover={{
+								y: -6,
+								boxShadow: "0px 0px 10px rgba(200, 200, 200, .4)",
+							}}
+							className="social-item"
+						>
 							<a href="#" className="social-link">
 								<AiOutlineTwitter />
 							</a>
-						</li>
-						<li className="social-item">
+						</motion.li>
+						<motion.li
+							whileHover={{
+								y: -6,
+								boxShadow: "0px 0px 10px rgba(200, 200, 200, .4)",
+							}}
+							className="social-item"
+						>
 							<a href="#" className="social-link">
 								<AiFillLinkedin />
 							</a>
-						</li>
-						<li className="social-item">
+						</motion.li>
+						<motion.li
+							whileHover={{
+								y: -6,
+								boxShadow: "0px 0px 10px rgba(200, 200, 200, .4)",
+							}}
+							className="social-item"
+						>
 							<a href="#" className="social-link">
 								<AiFillGithub />
 							</a>
-						</li>
-						<li className="social-item">
+						</motion.li>
+						<motion.li
+							whileHover={{
+								y: -6,
+								boxShadow: "0px 0px 10px rgba(200, 200, 200, .4)",
+							}}
+							className="social-item"
+						>
 							<a href="#" className="social-link">
 								<FaFacebookF />
 							</a>
-						</li>
+						</motion.li>
 					</ul>
 				</div>
 
 				<div className="contact-group">
 					<h5 className="contact-text">Contact me here!</h5>
 					<p>
-						Email: <a href="#">sadek@gmail.com</a>
+						Email: <a href="#">sadekirfan3@gmail.com</a>
 					</p>
 					<p>
 						Phone: <a href="#">+8801878520101</a>

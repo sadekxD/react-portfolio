@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { MdClose, MdCode } from "react-icons/md";
+import { Link as LinkS } from "react-scroll";
 
 const ToggleNav = ({ toggle, onClick }) => {
 	return (
@@ -8,8 +9,9 @@ const ToggleNav = ({ toggle, onClick }) => {
 			initial={{ y: 1.2, scale: 0 }}
 			animate={{ y: toggle ? 0 : 1, scale: toggle ? 1 : 0 }}
 			className={`nav-bg ${toggle ? "active" : ""}`}
+			onClick={onClick}
 		>
-			<div className="nav-close" onClick={onClick}>
+			<div className="nav-close">
 				<MdClose />
 			</div>
 			<div className="nav-toggle">
@@ -20,24 +22,60 @@ const ToggleNav = ({ toggle, onClick }) => {
 					<h1 className="header">Sadek Irfan</h1>
 					<ul className="nav-menu">
 						<li className="nav-item">
-							<a href="#" className="nav-link">
-								<span>01</span> Home
-							</a>
-						</li>
-						<li className="nav-item">
-							<a href="#" className="nav-link">
-								<span>02</span>Services
-							</a>
-						</li>
-						<li className="nav-item">
-							<a href="#" className="nav-link">
+							<LinkS
+								to="project"
+								spy={true}
+								smooth={true}
+								offset={-65}
+								exact="true"
+								duration={500}
+								className="nav-link"
+								onClick={onClick}
+							>
 								<span>03</span>Projects
-							</a>
+							</LinkS>
 						</li>
 						<li className="nav-item">
-							<a href="#" className="nav-link">
+							<LinkS
+								to="about"
+								spy={true}
+								smooth={true}
+								offset={-65}
+								exact="true"
+								duration={500}
+								className="nav-link"
+								onClick={onClick}
+							>
+								<span>01</span> About
+							</LinkS>
+						</li>
+						<li className="nav-item">
+							<LinkS
+								to="tech"
+								spy={true}
+								smooth={true}
+								offset={-65}
+								exact="true"
+								duration={500}
+								className="nav-link"
+								onClick={onClick}
+							>
+								<span>02</span>Services
+							</LinkS>
+						</li>
+						<li className="nav-item">
+							<LinkS
+								to="contact"
+								spy={true}
+								smooth={true}
+								offset={-65}
+								exact="true"
+								duration={800}
+								className="nav-link"
+								onClick={onClick}
+							>
 								<span>04</span>Contact
-							</a>
+							</LinkS>
 						</li>
 					</ul>
 				</div>
