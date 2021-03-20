@@ -1,25 +1,22 @@
 import React from "react";
 import { BsCode } from "react-icons/bs";
 import { AiOutlineEye } from "react-icons/ai";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
-const ProjectItem = () => {
+const ProjectItem = ({ image, title, gitURL, visitURL }) => {
 	return (
 		<div className="project-item-wrap">
 			<div className="project-item">
 				<div className="project-img">
-					<img
-						src="https://s27389.pcdn.co/wp-content/uploads/2017/04/AdobeStock_112185177-3-1024x683.jpeg"
-						alt="image"
-					/>
+					<img src={image} alt={title} />
 					<div className="img-overlay"></div>
 				</div>
-				<h3 className="project-title">This is dummy project</h3>
+				<h3 className="project-title">{title}</h3>
 				<div className="project-control">
-					<a href="#" className="btn-project">
+					<a href={visitURL} target="_blank" className="btn-project">
 						<AiOutlineEye /> Visit
 					</a>
-					<a href="#" className="btn-project">
+					<a href={gitURL} target="_blank" className="btn-project">
 						<BsCode /> Code
 					</a>
 				</div>

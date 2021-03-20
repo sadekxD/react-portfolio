@@ -2,14 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
 
-const ScrollTop = ({ children }) => {
+const ScrollTop = ({ children, onClick }) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 			className="scroll-top"
-			onClick={() => scroll.scrollToTop()}
+			onClick={onClick}
 		>
 			{children}
 		</motion.div>

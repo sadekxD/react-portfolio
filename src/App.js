@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Particles from "react-particles-js";
 import { AnimatePresence } from "framer-motion";
-
+import { animateScroll as scroll } from "react-scroll";
 // Components
 import About from "./components/About/About";
 import Project from "./components/Project/Project";
@@ -19,9 +19,23 @@ import django from "./images/django.png";
 import js from "./images/js.svg";
 import redux from "./images/redux.png";
 import { ReactComponent as Arrow } from "./images/ArrowTop.svg";
+import Popup from "./components/Popup";
 
 function App() {
 	const [scrollActive, setScrollActive] = useState(false);
+	const [sent, setSent] = useState(false);
+
+	useEffect(() => {
+		setTimeout(closePopup, 4000);
+	}, [sent]);
+
+	const scrollToTop = () => {
+		scroll.scrollToTop();
+	};
+
+	const closePopup = () => {
+		setSent(false);
+	};
 
 	return (
 		<div className="main">
@@ -86,18 +100,25 @@ function App() {
 					retina_detect: false,
 				}}
 			/>
-			<Navbar scrollActive={scrollActive} setScrollActive={setScrollActive} />
+			<Navbar
+				scrollActive={scrollActive}
+				setScrollActive={setScrollActive}
+				onClick={scrollToTop}
+			/>
 			<Hero />
 			<Project />
 			<About />
 			<Tech />
-			<Contact />
+			<Contact setSent={setSent} />
 			<AnimatePresence>
 				{scrollActive && (
-					<ScrollTop>
+					<ScrollTop onClick={scrollToTop}>
 						<Arrow />
 					</ScrollTop>
 				)}
+			</AnimatePresence>
+			<AnimatePresence>
+				{sent && <Popup closePopup={closePopup} />}
 			</AnimatePresence>
 			<Footer />
 		</div>

@@ -4,7 +4,7 @@ import Typist from "react-typist";
 const HeroItem = () => {
 	useEffect(() => {}, []);
 	return (
-		<div className="hero-item">
+		<div className="hero-item" style={{ marginTop: 70 }}>
 			<Typist
 				avgTypingDelay={100}
 				className="typist"

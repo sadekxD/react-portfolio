@@ -15,9 +15,9 @@ const Hero = () => {
 	return (
 		<section id="hero">
 			{/* <Slider {...settings}> */}
-				{/* <HeroItem /> */}
-				{/* <HeroItem /> */}
-				<HeroItem />
+			{/* <HeroItem /> */}
+			{/* <HeroItem /> */}
+			<HeroItem />
 			{/* </Slider> */}
 		</section>
 	);

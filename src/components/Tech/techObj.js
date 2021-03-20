@@ -26,7 +26,7 @@ export const techObj = [
 	},
 	{
 		icon: <SiJavascript />,
-		text: "Javascript",
+		text: "JS",
 	},
 	{
 		icon: <SiReact />,

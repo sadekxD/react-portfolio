@@ -3,7 +3,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { Link as LinkS } from "react-scroll";
 import ToggleNav from "./ToggleNav";
 
-const Navbar = ({ scrollActive, setScrollActive }) => {
+const Navbar = ({ scrollActive, setScrollActive, onClick }) => {
 	const [toggle, setToggle] = useState(false);
 
 	const changeNav = () => {
@@ -25,7 +25,7 @@ const Navbar = ({ scrollActive, setScrollActive }) => {
 	return (
 		<nav className={`${scrollActive ? "active" : ""}`}>
 			<div className="nav-container">
-				<h2 className="nav-logo">
+				<h2 className="nav-logo" onClick={onClick}>
 					Hi<span>Sadek</span>
 				</h2>
 				<ul className="nav-menu">

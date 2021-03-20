@@ -82,5 +82,30 @@ body {
 	justify-content: center;
 	cursor: pointer;
 	overflow: hidden;
-	background-color: #121212;
+}
+
+.popup {
+	color: black;
+	background: #ded34c;
+	padding: 1rem;
+	display: flex;
+	width: fit-content;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	position: fixed;
+	top: 100px;
+	right: 20px;
+
+	span {
+		display: flex;
+		color: #fff;
+		position: absolute;
+		top: 0%;
+		left: 100%;
+		transform: translate(-50%, -50%);
+		background-color: #fff;
+		border-radius: 50%;
+		padding: 0.5rem;
+		cursor: pointer;
+	}
 }

@@ -12,17 +12,17 @@ const settings = {
 	infinite: true,
 	slidesToShow: 4,
 	slidesToScroll: 1,
-	swipeToSlide: true,
+	// swipeToSlide: true,
 	autoplay: true,
 	speed: 5000,
-	autoplaySpeed: 0,
+	autoplaySpeed: 1000,
 	cssEase: "linear",
 	responsive: [
 		{
 			breakpoint: 700,
 			settings: {
 				slidesToShow: 3,
-				slidesToScroll: 3,
+				slidesToScroll: 1,
 				infinite: true,
 				dots: true,
 			},
@@ -30,15 +30,17 @@ const settings = {
 		{
 			breakpoint: 500,
 			settings: {
+				speed: 5000,
 				slidesToShow: 2,
-				slidesToScroll: 2,
+				slidesToScroll: 1,
 				initialSlide: 2,
 			},
 		},
 		{
 			breakpoint: 360,
 			settings: {
-				slidesToShow: 1,
+				speed: 5000,
+				slidesToShow: 2,
 				slidesToScroll: 1,
 			},
 		},

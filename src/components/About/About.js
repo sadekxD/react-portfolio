@@ -26,15 +26,15 @@ const About = () => {
 			<motion.div className="about-info">
 				<h1 className="info-text-bold">ABOUT</h1>
 				<h3 className="info-text">
-					We are three enterpeneurs from diverse background who have come
-					together to bring about a change in the way you think about business
-					and about the resourses that you rely on.
+					Hello! My name is Irfan Sadek. I am a web developer. I have a diverse
+					set of skill, ranging from HTML + CSS + Javascript + React, all the
+					way to Django.
 				</h3>
 
 				<div className="social">
 					<h3 className="social-text">Join me on my platforms</h3>
 					<ul className="social-group">
-						<motion.li
+						{/* <motion.li
 							whileHover={{
 								y: -6,
 								boxShadow: "0px 0px 10px rgba(200, 200, 200, .4)",
@@ -44,7 +44,7 @@ const About = () => {
 							<a href="#" className="social-link">
 								<AiOutlineTwitter />
 							</a>
-						</motion.li>
+						</motion.li> */}
 						<motion.li
 							whileHover={{
 								y: -6,
@@ -52,7 +52,11 @@ const About = () => {
 							}}
 							className="social-item"
 						>
-							<a href="#" className="social-link">
+							<a
+								href="https://www.linkedin.com/in/irfan-sadek77"
+								target="_blank"
+								className="social-link"
+							>
 								<AiFillLinkedin />
 							</a>
 						</motion.li>
@@ -63,7 +67,11 @@ const About = () => {
 							}}
 							className="social-item"
 						>
-							<a href="#" className="social-link">
+							<a
+								href="https://github.com/sadekXd"
+								target="_blank"
+								className="social-link"
+							>
 								<AiFillGithub />
 							</a>
 						</motion.li>
@@ -74,7 +82,11 @@ const About = () => {
 							}}
 							className="social-item"
 						>
-							<a href="#" className="social-link">
+							<a
+								href="https://www.facebook.com/sadekirfan77"
+								target="_blank"
+								className="social-link"
+							>
 								<FaFacebookF />
 							</a>
 						</motion.li>
